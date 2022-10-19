@@ -29,8 +29,8 @@ int main(void)
 	
 	//strcpyEx1();
 	//strcpyEx2();
-	strncpyEx1();
-	strncpyEx2();
+	//strncpyEx1();
+	//strncpyEx2();
 	//stringCompare();
 
 	//notice how test data can be sent in a loop so do not need to enter
@@ -114,7 +114,7 @@ void stringCompare(void)
 
 	printf("%s%s\n%s%s\n%s%s\n\n%s%2d\n%s%2d\n%s%2d\n\n",
 	       "s1 = ", s1, "s2 = ", s2, "s3 = ", s3,
-	       "strcmp(s1, s2) = ", strcmp(s1, s2),
+	       "strcmp(s1, s2) = ", strcmp(s1,s2),
 	       "strcmp(s1, s3) = ", strcmp(s1, s3),
 	       "strcmp(s3, s1) = ", strcmp(s3, s1));
 	printf("%s%2d\n%s%2d\n%s%2d\n",

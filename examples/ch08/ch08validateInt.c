@@ -16,9 +16,6 @@ void printLimits();
 int main(void)
 {
 	char inputStr[LENGTH]; // create char arintray
-	bool isValid = false;
-	int integerValue = 0;
-	size_t inputLength = 0;
 
 	printLimits();
 
@@ -82,6 +79,6 @@ void  exploreValidateInt(const char* buff)
 	}
 	else {
 		validInt = (int)intTest;
-		printf("%ld is integer value ", intTest);
+		printf("%d is integer value ", validInt);
 	}
 }

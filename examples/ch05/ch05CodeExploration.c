@@ -12,6 +12,7 @@ Description: Functions, automatic conversions, pass by value
 int autoConvertToInt (int first, int second);
 void swap(int a, int b);
 void testStaticVar(void);
+void fun(int num1, int num2);
 
 
 //Add your own comments to explain the code
@@ -44,17 +45,14 @@ int main()
 			
 	// part 2 pass by value
 	puts ("\nPart 2 Pass by Value");
-	int number1 = 7;
-	int number2 = 82;
-
-	printf ("Before swap number1 = %d\n", number1);
-	printf ("Before swap number2 = %d\n", number2);
+	int num1 = 7;
+	int num2 = 82;
 
 	//swap function will not change number1 or number2
-	swap(number1, number2);
-
-	printf ("After swap number1 = %d\n", number1);
-	printf ("After swap number2 = %d\n\n", number2);
+	fun(num1, num2);
+	puts("After fun");
+	printf ("num1 = %d\n", num1);
+	printf ("num2 = %d\n", num2);
 		
 	//part 3
     puts("Part 3 static and non-static variables");
@@ -75,24 +73,14 @@ int autoConvertToInt (int first, int second)
 }// end autoconvert
 
 // Function to swap two integers values
-void swap (int a, int b) 
-{
-	//a and b are copies
-	puts ("\n***Inside swap function***");
-	printf ("Before swap a = %d\n", a);
-	printf ("Before swap b = %d\n", b);
-
-	// Swap the values
-	int tmp = a;
-	a = b;
-	b = tmp;
-
-	printf ("After swap a = %d\n", a);
-	printf ("After swap b = %d\n", b);
-	puts ("***End of swap function***\n");
-	
-	
-} // end swap
+void fun (int num1, int num2) {
+	int tmp = num1;
+	num1 = num2;
+	num2 = tmp;
+	puts("Fun function");
+	printf ("num1 = %d\n", num1);
+	printf ("num2 = %d\n", num2);	
+} 
 
 void testStaticVar(void)
 {
