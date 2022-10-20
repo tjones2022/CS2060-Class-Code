@@ -16,19 +16,21 @@ void printLimits();
 int main(void)
 {
 	char inputStr[LENGTH]; // create char arintray
+	size_t stringLength = 0;
 
 	printLimits();
-
-
 
 	for (unsigned int counter = 1; counter < 6; counter++)
 	{
 		puts("\nEnter an integer");
 		fgets(inputStr, LENGTH, stdin);
+		stringLength = strlen(inputStr);
+		if (inputStr[stringLength - 1] = '\n')
+		{
+			inputStr[stringLength - 1] = '\0';
+		}
 		exploreValidateInt(inputStr);
 	}
-
-
 
 }
 
