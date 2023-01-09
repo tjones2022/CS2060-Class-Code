@@ -6,13 +6,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdbool.h>
 
 
 #define MIN_NUMBER 1
 const int MAX_NUMBER = 100;
 
 void guessGame(void); 
-int isCorrect(int, int); 
+bool isCorrect(int, int); 
 
 
 int main(void)
@@ -53,17 +54,16 @@ void guessGame(void)
 } 
 
 
-int isCorrect(int g, int a)
+bool isCorrect(int g, int a)
 {
+    bool found = false;
     if (g == a){
-        return 1;
-    }
-
-   if (g < a)
+        found = true;
+    }else  if (g < a)
       printf( "%s", "Too low. Try again.\n? " );
    else
       printf( "%s", "Too high. Try again.\n? " );
 
-   return 0;
+   return found;
 } 
 
