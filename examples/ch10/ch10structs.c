@@ -30,7 +30,11 @@ int main(void)
 	struct employee defaultEmployee;
 	puts("\n\nPart 1 declare struct employee defaultEmployee");
 
+	char stringtest[6] = { '\0'};
+
 	puts("Print after declaration defaultEmployee\n");
+
+
 
 	//What is stored?
 	printf("sizeof  defaultEmployee= %lu\n", sizeof(defaultEmployee));
@@ -44,6 +48,9 @@ int main(void)
 	strncpy(defaultEmployee.lastName, "Horror", NAME_SIZE);
 	defaultEmployee.age = 0;
 	defaultEmployee.hourlySalary = 0;
+
+	printf("defalutemployee %d\n", defaultEmployee);
+	printf("defalutemployee %p\n", defaultEmployee);
 
 	puts("\nPrint after intialization of defaultEmployee");
 

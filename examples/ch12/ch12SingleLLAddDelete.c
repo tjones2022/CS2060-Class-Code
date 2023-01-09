@@ -19,9 +19,8 @@ Add comments to explain code
 //
 typedef struct node
 {
-	//
+	// 
 	int data;
-
 	//
 	struct node* nextNodePtr;
 }Node;

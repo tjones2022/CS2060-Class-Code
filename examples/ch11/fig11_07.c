@@ -8,7 +8,7 @@ int main(void)
    FILE *cfPtr; // clients.txt file pointer
 
    // fopen opens the file; exits program if file cannot be opened
-   if ((cfPtr = fopen("clients.txt", "r")) == NULL) {
+   if ((cfPtr = fopen("C:\\CS2060Files\\clients.txt", "r")) == NULL) {
       puts("File could not be opened");
    } 
    else {
