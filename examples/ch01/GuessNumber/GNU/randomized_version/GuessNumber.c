@@ -53,8 +53,6 @@ void guessGame(void)
            "Please type your first guess.", MIN_NUMBER, MAX_NUMBER);
 
       //
-
-      //
       do
       {
           //
